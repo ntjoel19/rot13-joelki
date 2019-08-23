@@ -28,6 +28,7 @@ function rot13(text){
 }
 
 function copyToclipboard(){
-    text = document.getElementById("output").select()
+    var text = document.getElementById("output");
+    text.select();
     document.execCommand("copy");
 }
